@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "the10thdayfont";
+  src: url({{ "/assets/fonts/FarnhamDisplay-Regular.c8c674c.woff" | relative_url }}) format('woff');
+}
+
+body {
+    background-color: #13001C;
+    color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+       -moz-font-feature-settings: "kern" 1;
+         -o-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: "the10thdayfont",serif;
+    font-weight: 400;
+}
+html, body {
+    max-height: 800px;
+    overflow: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/** Canvas for java boundries **/
+
+ canvas {
+   display : block;
+  }
+
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+
+
+  /* ---- particles.js container ---- */
+
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+/** end **/
+
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline {
+  margin: 20px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.readnow a{
+  text-decoration: none;
+  border-bottom: 1px;
+  border-color: #fff;
+  margin-left: 200px;
+}
+
+/**  Button Styling **/
+.button-holder {
+  position: relative;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/** Top bar**/
+
+.site-header {
+  width: 100%;
+  padding: 0 0;
+  display: block;
+}
+.site-title {
+  visibility: hidden;
+}
+
+.site-nav {}
+.nav-trigger {
+  display: none;
+}
+.trigger {
+  position: absolute;
+  top: 36px;
+  right: 3rem;
+  text-transform: uppercase; 
+}
+.menu-icon {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  left: 3rem;
+  top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+
+/** post content styling **/
+
+.post {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: baseline;
+  -moz-osx-font-smoothing: grayscale;
+}
+.page-content p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-meta, .post-header {
+  visibility: hidden;
+}
+
+/** page navigation **/
+.PageNavigation {
+  bottom:0;
+  position:fixed;
+  z-index:150;
+  _position:absolute;
+  _top:expression(eval(document.documentElement.scrollTop+
+      (document.documentElement.clientHeight-this.offsetHeight)));
+  height:35px;
+  display: flex;
+  width: 100%;
+  margin-left: 0 auto;
+  flex-flow: row wrap;
+  padding: 60px 9% 20px;
+  justify-content: space-between;
+  background-image: linear-gradient(0deg,#13001C,hsla(37,87%,97%,0));
+  cursor: pointer;
+}
+
+/**.PageNavigation a {
+  display: block;
+  float: left;
+  margin: 1em 0;
+}**/
+
+.next {
+  position: fixed;
+  bottom: 40px;
+  right: 3rem;
+  text-align: right;
+  display: inline-block;
+  letter-spacing: 2.002px;
+  vertical-align: baseline;
+}
+
+.prev {
+  text-align: left;
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  left: 3rem;
+  letter-spacing: 2.002px;
+  vertical-align: baseline;
+}
+
+/** Javascripts **/
+
+.spark {
+    background-color: #DE4A00;
+    font-family: 'Helvetica', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 30%;
+    box-shadow: 0 0 5px #AB000B;
+}
+
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+// Rest of CSS (Purely for this pen)
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+
+.headline{
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-family: inherit;
+  h1{
+    letter-spacing: 1.6px;
+    font-weight: 300;
+  }
+}
