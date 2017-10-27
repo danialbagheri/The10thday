@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 19,
+      "value": 66,
       "density": {
         "enable": true,
-        "value_area": 400.851810096455
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#ed2222"
+      "value": "#c01818"
     },
     "shape": {
       "type": "circle",
@@ -17,7 +17,7 @@
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 4
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -26,44 +26,44 @@
       }
     },
     "opacity": {
-      "value": 0.14430665163472378,
+      "value": 1,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 0.8,
-        "opacity_min": 0.07308717167872097,
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 2,
-      "random": false,
+      "value": 3,
+      "random": true,
       "anim": {
-        "enable": true,
-        "speed": 41.41606395127522,
-        "size_min": 7.308717167872097,
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
         "sync": false
       }
     },
     "line_linked": {
       "enable": false,
-      "distance": 144.30665163472378,
+      "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.21645997745208567,
-      "width": 3.527495928848804
+      "opacity": 0.4,
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 3.20681448077164,
+      "speed": 2.5,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
-        "rotateX": 1683.5776024051108,
-        "rotateY": 3206.81448077164
+        "enable": false,
+        "rotateX": 721.533258173619,
+        "rotateY": 600
       }
     }
   },
@@ -72,11 +72,11 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -88,14 +88,14 @@
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 250,
+        "size": 0,
         "duration": 2,
-        "opacity": 8,
+        "opacity": 0,
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 400,
         "duration": 0.4
       },
       "push": {
