@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    a{text-decoration: none;}
+    /* line 1, ../sass/partials/_programs-slider.scss */
+    .programs-slider {
+      height: 700px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* line 12, ../sass/partials/_programs-slider.scss */
+    .programs-slider:before {
+      content: '';
+      border-left: 83px solid transparent;
+      border-right: 83px solid transparent;
+      border-top: 40px solid #FFF;
+      position: relative;
+      top: 40px;
+      z-index: 1;
+    }
+    /* line 24, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program {
+      -moz-transition-property: left;
+      -o-transition-property: left;
+      -webkit-transition-property: left;
+      transition-property: left;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -moz-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 25%;
+      height: 700px;
+      overflow: hidden;
+      border-left: 1px solid #FFF;
+      border-right: 1px solid #FFF;
+      position: absolute;
+      margin-right: 1px;
+      background: #000;
+      color: #FFF;
+    }
+    /* line 40, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:nth-child(1) {
+      left: 0%;
+      border-left: none;
+    }
+    /* line 40, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:nth-child(2) {
+      left: 20%;
+    }
+    /* line 40, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:nth-child(3) {
+      left: 40%;
+    }
+    /* line 40, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:nth-child(4) {
+      left: 60%;
+      border-right: none;
+    }
+    /* line 40, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:nth-child(5) {
+      left: 80%;
+    }
+    /* line 52, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    /* line 60, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .bg img {
+      width: auto;
+      height: 100%;
+      left: 0;
+      position: absolute;
+    }
+    /* line 66, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .bg img.saturated {
+      display: none;
+    }
+    /* line 72, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .content {
+      -moz-transition-property: width, left;
+      -o-transition-property: width, left;
+      -webkit-transition-property: width, left;
+      transition-property: width, left;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -moz-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 80%;
+      position: relative;
+      z-index: 1;
+      padding-top: 180px;
+      height: 490px;
+    }
+    /* line 83, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .content .title {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      /*bottom: 150px;*/
+    }
+    /* line 93, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .content .title p {
+      /*max-width: 240px;*/
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* line 100, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .content .icon {
+      margin: 0;
+      display: block !important;
+    }
+    /* line 104, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program .content .icon img {
+      margin: 0 auto;
+      display: block;
+    }
+    /* line 111, ../sass/partials/_programs-slider.scss */
+    .programs-slider .program:hover, .programs-slider .program:focus, .programs-slider .program:active {
+      color: #FFF;
+    }
+    /* line 121, ../sass/partials/_programs-slider.scss */
+    .no-touch .programs-slider .program:hover .bg img.saturated {
+      display: block;
+    }
+    /* line 125, ../sass/partials/_programs-slider.scss */
+    .no-touch .programs-slider .program:hover .bg img.desaturated {
+      display: none;
+    }
+    /* line 137, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program1 .program:nth-child(1) {
+      left: 0%;
+    }
+    /* line 137, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program1 .program:nth-child(2) {
+      left: 24%;
+    }
+    /* line 137, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program1 .program:nth-child(3) {
+      left: 44%;
+    }
+    /* line 137, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program1 .program:nth-child(4) {
+      left: 64%;
+    }
+    /* line 137, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program1 .program:nth-child(5) {
+      left: 84%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program2 .program:nth-child(1) {
+      left: -2%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program2 .program:nth-child(2) {
+      left: 18%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program2 .program:nth-child(3) {
+      left: 42%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program2 .program:nth-child(4) {
+      left: 62%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program2 .program:nth-child(5) {
+      left: 82%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program3 .program:nth-child(1) {
+      left: -2%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program3 .program:nth-child(2) {
+      left: 18%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program3 .program:nth-child(3) {
+      left: 38%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program3 .program:nth-child(4) {
+      left: 62%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program3 .program:nth-child(5) {
+      left: 82%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program4 .program:nth-child(1) {
+      left: -2%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program4 .program:nth-child(2) {
+      left: 18%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program4 .program:nth-child(3) {
+      left: 38%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program4 .program:nth-child(4) {
+      left: 58%;
+    }
+    /* line 157, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program4 .program:nth-child(5) {
+      left: 82%;
+    }
+    /* line 147, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program5 .program:nth-child(1) {
+      left: -4%;
+    }
+    /* line 147, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program5 .program:nth-child(2) {
+      left: 16%;
+    }
+    /* line 147, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program5 .program:nth-child(3) {
+      left: 36%;
+    }
+    /* line 147, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program5 .program:nth-child(4) {
+      left: 56%;
+    }
+    /* line 147, ../sass/partials/_programs-slider.scss */
+    .programs-slider.program5 .program:nth-child(5) {
+      left: 76%;
+    }
+    /* line 170, ../sass/partials/_programs-slider.scss */
+    .programs-slider .btn-wrap {
+      text-align: center;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      margin-left: -108px;
+    }
+    @media only screen and (min-width: 2300px) {
+      /* line 181, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .bg img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      /* line 192, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program:hover .content {
+        width: 100%;
+      }
+      /* line 198, ../sass/partials/_programs-slider.scss */
+      .programs-slider .icon {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    @media only screen and (max-width: 1199px) {
+      /* line 208, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .content .title {
+        font-size: 20px;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      /* line 1, ../sass/partials/_programs-slider.scss */
+      .programs-slider {
+        height: auto;
+      }
+      /* line 218, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        left: 0 !important;
+        height: 200px;
+        display: block;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #FFF;
+      }
+      /* line 229, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .bg {
+        position: absolute;
+      }
+      /* line 232, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .bg img {
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -moz-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        width: 100%;
+        height: auto;
+        left: 0;
+        display: block !important;
+      }
+      /* line 242, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .bg img.saturated {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+      }
+      /* line 246, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .bg img.desaturated {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+      }
+      /* line 252, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .content {
+        display: table;
+        top: 0;
+        padding: 0 0 0 0px;
+        height: 100%;
+        margin: 0 auto;
+      }
+      /* line 259, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .content .title {
+        margin: 0;
+        font-size: 18px;
+        display: table-cell;
+        vertical-align: middle;
+/*        padding-left: 20px;
+        padding-right: 40px;*/
+        text-align: center;
+        position: relative;
+        bottom: 0;
+      }
+      /* line 270, ../sass/partials/_programs-slider.scss */
+/*     .programs-slider .program .content .title:after {
+        font-family: 'ic-icons';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;*/
+        /* Better Font Rendering =========== */
+/*        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e604";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+      }*/
+      /* line 280, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .content .icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -33px;
+      }
+      /* line 286, ../sass/partials/_programs-slider.scss */
+      .programs-slider .program .content .icon img {
+        width: 65px;
+        height: 65px;
+      }
+      /* line 297, ../sass/partials/_programs-slider.scss */
+      .no-touch .programs-slider .program:hover .bg img.saturated {
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+      }
+
+      .no-touch .programs-slider .program:hover .bg img.desaturated {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+      .programs-slider .btn-wrap {
+        position: relative;
+        background: #353535;
+        border-top: 1px solid #FFF;
+        bottom: auto;
+        padding: 20px 0;
+        left: 0;
+        margin-left: 0;
+      }
+    }
+
+    #mytext{
+      margin-top: 100px;
+      font-family: "futura-pt",sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 1.4;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      display: none;
+    }
+
+    .watchbtn {
+      background-color: #c7342e;
+      color: #fff;
+      padding: 10px 20px;   
+    }
+
+    .watchbtn:hover,
+    .watchbtn:focus {
+      background-color: #7e2521;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 991px){
+      #mytext{margin-top: 10px;font-size: 14px;width: 100%;display: block;}
+    }
+
+    </style>
+</head>
+<body>
+    
+<div class="programs-slider">
+
+  <a href="#" class="program">
+      <div class="bg">
+          <img class="saturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/gandhi.png" alt="Mahatma Gandhi" style="left: -170px;">
+          <img class="desaturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/gandhibw.png" alt="Mahatma Gandhi" style="left: -170px;">
+      </div>
+      <div class="content">
+          <div class="title">
+              <p>Mahatma Gandhi</p>
+              <p id="mytext">I learnt from Hussain how to achieve victory while being oppressed.</p>
+          </div>
+      </div>
+  </a>
+
+    <a href="#" class="program">
+        <div class="bg">
+            <img class="saturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/mohammad.png" alt="Prophet Mohammad" style="left: -170px;">
+            <img class="desaturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/mohammadbw.png" alt="Prophet Mohammad" style="left: -170px;">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>Prophet Mohammad</p><!-- <br><p></p> -->
+                <p id="mytext">Hussain is from me and I am from Hussain.</p>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="program">
+        <div class="bg">
+            <img class="saturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/dickens.png" alt="Charles Dickens" style="left: -170px;">
+            <img class="desaturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/dickensbw.png" alt="Charles Dickens" style="left: -170px;">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>Charles Dickens</p>
+                <p id="mytext">If Hussain had fought to quench his worldy desires, then I do not understand why his sister, wife and children accompanied him. It stands to reason therefore that he sacrificed purely for Islam.</p>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="program">
+        <div class="bg">
+            <img class="saturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/gibbon.png" alt="Edward Gibbon" style="left: -170px;">
+            <img class="desaturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/gibbonbw.png" alt="Edward Gibbon" style="left: -170px;">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>Edward Gibbon</p>
+                <p id="mytext">His sacrifice is for all groups and communities, an example of the path of righteousness. In a distant age and climate the tragic scene of the death of Hussain will awaken the sympathy of the coldest reader.</p>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="program">
+        <div class="bg">
+            <img class="saturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/hewer.png" alt="Dr. Chris Hewer" style="left: -170px;"><img class="desaturated" src="http://the10thday.com/the10thday2016/wp-content/uploads/2018/03/hewerbw.png" alt="Dr. Chris Hewer" style="left: -170px;">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>Dr. Chris Hewer </p>
+                <p id="mytext">Hussain did not want to provoke civil war and the loss of many lives. He tried to avoid conflict but went willingly to his death rather than do what he knew to be wrong.</p>
+            </div>
+        </div>
+    </a>	
+    <div class="btn-wrap ">
+		<a href="https://www.youtube.com/watch?v=J4UB9feeUNM" class="watchbtn" target="_blank">WATCH THE VIDEO</a>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="custom.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
